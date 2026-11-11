@@ -1,16 +1,63 @@
-<html lang = "en">
-    <head>
-        <title>Nirdesh's Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="components.js" defer></script>
-    </head>
-    <body>
-        <header id = "mainHeader">
-            <h1>Nirdesh Adusumilli</h1>
-        </header>
-        <site-nav></site-nav>
-        <img src = "image.png" alt="Portfolio Image" id = "base"></img>
-        <site-footer></site-footer>
-    </body>
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nirdesh Adusumilli</title>
+<meta name="description" content="Nirdesh Adusumilli, Computer Science student at Rose-Hulman (GPA 3.79, expected May 2028) and Forward Deployed AI Engineering Intern at Rose-Hulman Ventures.">
+<meta property="og:title" content="Nirdesh Adusumilli">
+<meta property="og:description" content="CS student at Rose-Hulman and Forward Deployed AI Engineering Intern at Rose-Hulman Ventures.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1c1d20">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%231c1d20'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Arial,sans-serif' font-size='17' fill='%23fff'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400..600&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script src="components.js" defer></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<site-nav tone="light"><noscript><header class="nav nav-light"><a class="brand" href="index.html">&copy; Nirdesh Adusumilli</a><nav class="nav-links" aria-label="Primary" style="display:flex"><a href="portfolio.html">Work</a><a href="resume.html">Resume</a></nav></header></noscript></site-nav>
+
+<main id="main">
+
+  <section class="hero" aria-labelledby="hero-h">
+    <h1 class="sr-only" id="hero-h">Nirdesh Adusumilli</h1>
+    <div class="hero-in">
+      <p class="hero-lead">I build AI systems for the real world, from a <span class="nb">Raspberry Pi</span> at the edge to the checks on every <span class="nb">pull request.</span></p>
+      <div class="hero-role">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><path d="M5 5l14 14M19 8v11H8"/></svg>
+        <p>Aspiring AI Engineer <br>&amp; CS student</p>
+      </div>
+    </div>
+    <div class="marq" aria-hidden="true"><span>Nirdesh Adusumilli &mdash;</span><span>Nirdesh Adusumilli &mdash;</span><span>Nirdesh Adusumilli &mdash;</span><span>Nirdesh Adusumilli &mdash;</span></div>
+  </section>
+
+  <section class="intro" aria-labelledby="intro-h">
+    <h2 id="intro-h" data-r>I&rsquo;m a Computer Science student at <span class="nb">Rose-Hulman</span>, graduating May 2028, and a Forward Deployed AI Engineering Intern at <span class="nb">Rose-Hulman</span> Ventures.</h2>
+    <div class="intro-side" data-r>
+      <p>Right now I&rsquo;m building Perch, an <span class="nb">edge-vision</span> device, and Flock, the fleet backend that keeps it updated.</p>
+      <a class="orb" data-mag href="resume.html"><span>My resume</span></a>
+    </div>
+  </section>
+
+  <section class="work" aria-labelledby="work-h">
+    <h2 class="label" id="work-h">Recent work</h2>
+    <ul class="rows">
+      <li><a class="row" href="portfolio.html#perch"><span class="row-t">Perch / Flock</span><span class="row-c">Edge ML &amp; fleet backend</span></a></li>
+      <li><a class="row" href="portfolio.html#review"><span class="row-t">Security Review</span><span class="row-c">CI/CD &amp; Claude API</span></a></li>
+      <li><a class="row" href="portfolio.html#kynetic"><span class="row-t">Kynetic Clip</span><span class="row-c">Co-founder &amp; backend</span></a></li>
+      <li><a class="row" href="portfolio.html#docqa"><span class="row-t">Document Q&amp;A</span><span class="row-c">FastAPI &amp; OpenAI</span></a></li>
+    </ul>
+    <p class="work-more"><a class="pill" href="portfolio.html">More work <sup>4</sup></a></p>
+
+    <div class="view-dot" aria-hidden="true"><span>View</span></div>
+  </section>
+
+</main>
+
+<site-footer><noscript><footer class="foot" id="contact"><div class="foot-in"><h2 class="foot-h">Let&rsquo;s work<br>together</h2><div class="foot-pills"><a class="pill" href="mailto:adusumillinirdesh@gmail.com">adusumillinirdesh@gmail.com</a><a class="pill" href="https://www.linkedin.com/in/nirdeshadusumilli/" rel="noopener">LinkedIn</a><a class="pill" href="https://github.com/nirdeshadusumilli2007" rel="noopener">GitHub</a></div></div><div class="foot-bar"><div><h3>Based in</h3><p>Terre Haute, IN</p></div></div></footer></noscript></site-footer>
+</body>
 </html>

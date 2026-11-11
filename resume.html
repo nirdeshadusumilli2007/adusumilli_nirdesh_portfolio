@@ -1,70 +1,164 @@
-<html lang = "en">
-    <head>
-        <title>Nirdesh's Resume</title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="components.js" defer></script>
-    </head>
-    <body>
-        <h1> Welcome to my Resume page! </h1>
-        <site-nav></site-nav>
-        <section>
-            <h2>Education</h2>
-            <hr>
-            <ul>
-                <li><strong>Rose-Hulman Institute of Technology (September 2025 to June 2028)</strong>
-                    <ul>
-                        <li>Major: Computer Science </li>
-                        <li>GPA: 3.8</li>
-                        <li>Relevant Coursework: Data Structures and Algorithms, Operating Systems, Intro to Systems Programming, Object-Oriented Programming, Intro to Web Programming</li>
-                        <li>Pi Kappa Alpha Fraternity</li>
-                    </ul>
-                </li>
-                <li><strong>Neuqua Valley High School (February 2022 to June 2025)</strong>
-                    <ul>
-                        <li>GPA: 3.7</li>
-                    </ul>
-                </li>
-                <li><strong>Hinsdale Central High School (September 2021 to February 2022)</strong></li>
-                
-            </ul>
-        </section>
-        <section>
-            <h2>Experience</h2>
-            <hr>
-            <ul>
-                <li><strong>Rose-Hulman Ventures</strong> (June 2026 to Present)
-                    <ul>
-                        <li>Built an AI-powered CI/CD security review pipeline (GitHub Actions + Anthropic Claude API) that automatically scans every pull request for code vulnerabilities before merge</li>
- 
-                        <li>Designed and shipped a full-stack inventory management web app  - Node.js/Prisma REST API, PostgreSQL database, HTML/CSS/JavaScript frontend with full CRUD stock tracking</li>
- 
-                        <li>Contributing to a client project under NDA involving LLM-based agent systems and AWS cloud infrastructure (Python, Lambda, S3, DynamoDB)</li>
-                    </ul>
-                </li>
-                <li><strong>Softforce Apps</strong> (June 2025 - August 2025)
-                    <ul>
-                        <li>Developed a FastAPI-based PDF processing system with OpenAI integration for document Q&A — automated text extraction plus contextual answers to user questions about uploaded documents</li>
-                        <li>Built an invoice management system with Razorpay integration: automated payouts, contact creation, fund account setup, and scheduled payment processing</li>
-                        <li>Designed the database schema and RESTful API endpoints for referrals, services, vendors, users, and invoices — full CRUD operations, PDF invoice generation, Pydantic validation</li>
-                        <li>Integrated the WhatsApp Business API via Twilio for automated customer notifications (invoice approvals, payment confirmations) using templated messages</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2><strong>Skills</strong></h2>
-            <hr>
-            <ul>
-                <li><strong>Technical</strong>: Python, Java, C, JavaScript, Go, Full-Stack Development, AI Integration, PostgreSQL, REST API, HTML, CSS, ReactJS, SQLAlchemy, Assembly, FastAPI, AI Agents / Agentic AI / Generative AI (certificates), AWS</li>
-                <li><strong>Software</strong>: Visual Studio Code, GitHub, Cursor, Google Gemini AI Studio, Base44, Linux, OpenAI, Claude, Git, Excel</li>
-            </ul>
-            
-            
-        </section>
-        <section>
-            
-        </section>
-        <site-footer></site-footer>
-    </body> 
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resume · Nirdesh Adusumilli</title>
+<meta name="description" content="Resume of Nirdesh Adusumilli: B.S. Computer Science at Rose-Hulman (expected May 2028, GPA 3.79, Dean's List 3 of 3), Forward Deployed AI Engineering Intern at Rose-Hulman Ventures, projects, skills, certificates and teaching.">
+<meta property="og:title" content="Resume · Nirdesh Adusumilli">
+<meta property="og:description" content="Experience, projects, education, skills and certificates of an aspiring AI engineer at Rose-Hulman, open to AI and software engineering internships.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%231c1d20'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Arial,sans-serif' font-size='17' fill='%23fff'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400..600&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script src="components.js" defer></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<site-nav><noscript><header class="nav"><a class="brand" href="index.html">&copy; Nirdesh Adusumilli</a><nav class="nav-links" aria-label="Primary" style="display:flex"><a href="portfolio.html">Work</a><a href="resume.html" aria-current="page">Resume</a></nav></header></noscript></site-nav>
+
+<main id="main">
+
+  <header class="page-head">
+    <p class="label">Resume, updated October 2026</p>
+    <h1>Nirdesh Adusumilli</h1>
+    <p class="cv-role">Aspiring AI Engineer. Studying Computer Science at <span class="nb">Rose-Hulman</span>, graduating May 2028.</p>
+    <div class="cv-line"><a class="orb orb-accent" data-mag href="Nirdesh_Adusumilli_Resume.pdf" download><span>Download<br>PDF</span></a></div>
+    <ul class="cv-contact">
+      <li><a class="ul" href="mailto:adusumillinirdesh@gmail.com">adusumillinirdesh@gmail.com</a></li>
+      <li><a class="ul" href="https://www.linkedin.com/in/nirdeshadusumilli/" rel="noopener">linkedin.com/in/nirdeshadusumilli</a></li>
+      <li><a class="ul" href="https://github.com/nirdeshadusumilli2007" rel="noopener">github.com/nirdeshadusumilli2007</a></li>
+      <li class="loc">Terre Haute, IN and Bolingbrook, IL</li>
+    </ul>
+  </header>
+
+  <section class="cv-sec" id="experience" aria-labelledby="h-exp">
+    <h2 id="h-exp">Experience</h2>
+    <div class="cv-body">
+      <article class="job" data-r>
+        <div class="job-head">
+          <h3>Forward Deployed AI Engineering Intern</h3>
+          <p class="when"><time datetime="2026-06">Jun 2026</time> to present</p>
+          <p class="org"><span class="nb">Rose-Hulman</span> Ventures, Terre Haute, IN</p>
+        </div>
+        <ul class="pts">
+          <li>Built an AI-powered CI/CD security review pipeline using GitHub Actions and the Anthropic Claude API that scans every pull request for vulnerabilities before merge, now adopted across multiple projects</li>
+          <li>Collaborated in building a full-stack inventory management app with a Node.js/Prisma REST API, PostgreSQL database, and React frontend supporting full CRUD stock tracking</li>
+          <li>Contributed to a client project under NDA involving LLM-based agent systems and AWS cloud infrastructure (Python, Lambda, S3, DynamoDB)</li>
+        </ul>
+      </article>
+      <article class="job" data-r>
+        <div class="job-head">
+          <h3>Software Engineering Intern</h3>
+          <p class="when"><time datetime="2025-06">Jun 2025</time> to <time datetime="2025-08">Aug 2025</time></p>
+          <p class="org">SoftForce Apps, Telangana, India</p>
+        </div>
+        <ul class="pts">
+          <li>Developed a FastAPI-based PDF processing system with OpenAI integration for document Q&amp;A, enabling intelligent text extraction and contextual responses</li>
+          <li>Built an invoice management system with REST APIs to manage referrals, vendors, and invoices, supporting automated payouts and PDF generation</li>
+          <li>Integrated Razorpay and WhatsApp Business APIs to automate payment processing and customer notifications</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="cv-sec" id="projects" aria-labelledby="h-proj">
+    <h2 id="h-proj">Projects</h2>
+    <div class="cv-body">
+      <article class="job" data-r>
+        <div class="job-head">
+          <h3>Perch / Flock</h3>
+          <p class="when"><time datetime="2026-10">Oct 2026</time> to present</p>
+          <p class="org"><span class="nb">Edge-vision</span> device and the fleet backend that keeps it updated. <a href="portfolio.html#perch">See how it fits together</a></p>
+        </div>
+        <ul class="pts">
+          <li>Building the ML pipeline for a Raspberry Pi 5 + <span class="nb">Hailo-8L</span> vision device: YOLO nano detector compiled to Hailo HEF, Python inference runtime, SQLite queue so detections survive network drops</li>
+          <li>Building Flock, the fleet backend: device registry, heartbeat telemetry, Prometheus/Grafana dashboards, and signed over-the-air model updates with canary rollout and automatic rollback</li>
+          <li>Designing a closed retraining loop: on-device hard-example mining, fine-tuning with quantization-aware training, held-out evaluation, fleet-wide deployment</li>
+        </ul>
+        <p class="stack">Raspberry Pi 5, Hailo-8L, YOLO, Python, SQLite, Prometheus, Grafana, OTA updates, QAT</p>
+      </article>
+      <article class="job" data-r>
+        <div class="job-head">
+          <h3>Kynetic Clip</h3>
+          <p class="when"><time datetime="2025-10">Oct 2025</time> to <time datetime="2026-04">Apr 2026</time></p>
+          <p class="org"><span class="nb">Co-Founder</span> and Lead Software Developer, under NDA</p>
+        </div>
+        <ul class="pts">
+          <li>Built backend functionality for per-rep performance metrics with auto-baseline calibration to detect fatigue and performance degradation in real time with AI-driven analytics for week-over-week analysis</li>
+        </ul>
+        <p class="stack">Full-Stack Development, Laravel, AI Integration, Bootstrap, iOS Development, Mobile Development, Artificial Intelligence</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="cv-sec" id="education" aria-labelledby="h-edu">
+    <h2 id="h-edu">Education</h2>
+    <div class="cv-body" data-r>
+      <dl class="facts facts-big">
+        <div><dt>School</dt><dd><span class="nb">Rose-Hulman</span> Institute of Technology<small>Terre Haute, IN</small></dd></div>
+        <div><dt>Degree</dt><dd>B.S. Computer Science<small>Expected <time datetime="2028-05">May 2028</time></small></dd></div>
+        <div><dt>GPA</dt><dd>3.79<small>Dean&rsquo;s List, 3 of 3 trimesters</small></dd></div>
+      </dl>
+      <dl class="facts facts-more">
+        <div><dt>Affiliations</dt><dd>Member, Pi Kappa Alpha Fraternity</dd></div>
+        <div><dt>Related courses</dt><dd>Data Structures and Algorithms, Operating Systems, Systems Programming, Web Programming, Object-Oriented Programming, Database Systems, Computer Architecture I, Data Mining</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="cv-sec" id="skills" aria-labelledby="h-skills">
+    <h2 id="h-skills">Skills</h2>
+    <div class="cv-body" data-r>
+      <dl class="facts">
+        <div><dt>Languages</dt><dd>Python, JavaScript, Java, C, Go, Assembly, HTML, CSS</dd></div>
+        <div><dt>Frameworks and backend</dt><dd>FastAPI, Flask, ReactJS, SQLAlchemy, REST API, PostgreSQL, Full-Stack Development</dd></div>
+        <div><dt>AI and cloud</dt><dd>AI Integration, AWS, OpenAI, Claude Code, Google Gemini AI Studio, Base44</dd></div>
+        <div><dt>Tools</dt><dd>VS Code, Cursor, Git, GitHub, Linux, Excel</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="cv-sec" id="certificates" aria-labelledby="h-cert">
+    <h2 id="h-cert">Certificates</h2>
+    <div class="cv-body" data-r>
+      <ul class="certs">
+        <li>Agentic &amp; Generative AI</li>
+        <li>AI Data Analysis</li>
+        <li>Prompt Engineering</li>
+        <li>Custom AI Assistants</li>
+        <li>AI Agent Architecture</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cv-sec" id="teaching" aria-labelledby="h-teach">
+    <h2 id="h-teach">Teaching, leadership and service</h2>
+    <div class="cv-body">
+      <article class="job" data-r>
+        <div class="job-head">
+          <h3>Grader</h3>
+          <p class="when"><time datetime="2025-12">Dec 2025</time> to <time datetime="2026-06">Jun 2026</time></p>
+          <p class="org"><span class="nb">Rose-Hulman</span> Institute of Technology, Terre Haute, IN</p>
+        </div>
+        <ul class="pts">
+          <li>Evaluated students&rsquo; quizzes and homework for Differential Equations I and Calculus II, ensuring accuracy while providing detailed feedback to enhance students&rsquo; understanding</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <a class="next" href="portfolio.html">
+    <span><span class="label">Next</span><span class="next-t">Work</span></span>
+    <span class="orb" data-mag aria-hidden="true"><span>See it</span></span>
+  </a>
+
+</main>
+
+<site-footer><noscript><footer class="foot" id="contact"><div class="foot-in"><h2 class="foot-h">Let&rsquo;s work<br>together</h2><div class="foot-pills"><a class="pill" href="mailto:adusumillinirdesh@gmail.com">adusumillinirdesh@gmail.com</a><a class="pill" href="https://www.linkedin.com/in/nirdeshadusumilli/" rel="noopener">LinkedIn</a><a class="pill" href="https://github.com/nirdeshadusumilli2007" rel="noopener">GitHub</a></div></div><div class="foot-bar"><div><h3>Based in</h3><p>Terre Haute, IN</p></div></div></footer></noscript></site-footer>
+</body>
 </html>

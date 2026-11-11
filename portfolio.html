@@ -1,32 +1,109 @@
-<html lang = ""en> 
-    <head>       
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="components.js" defer></script>
-    </head>
-    <body>
-        <h1> Welcome to my Portfolio page! </h1>
-        <site-nav></site-nav>
-        <section>
-            <ul>
-                <li><h2>
-                <strong><a href="https://github.com/nirdeshadusumilli2007/public-ai-job-application">AI Job Application</a> Agent (June 2026 - Present)</strong> </h2>
-                    <ul>
-                        <li><strong>Technologies Used: Claude Code (MCP)</strong></li>
-                        <li>Architected a Claude Code (MCP) agent that scores job fit, tailors resumes/cover letters, and auto-fills ATS applications (Workday, Greenhouse, LinkedIn, etc) with human review</li>
-                        <img src = "AIJobReviews.png" alt="AI Job Reviews" id = "image">
-                    </ul>
-                </li>
-                <li><h2><strong>Kynetic Clip</strong> (October 2025 - April 2026)</h2>
-                    <ul>
-                        <li><strong>Technologies Used</strong>: Full-Stack Development, Laravel, AI Integration, Bootstrap, iOS Development, Mobile Development, Artificial Intelligence</li>
-                        <li>Built backend functionality for per-rep performance metrics with auto-baseline calibration to detect fatigue and performance degradation in real time with AI-driven analytics for week-over-week analysis</li>
-                        <img src = "image_unavalible" alt="unavalible" id = "image">
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <site-footer></site-footer>
-    </body>
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Work · Nirdesh Adusumilli</title>
+<meta name="description" content="Work by Nirdesh Adusumilli: Perch/Flock, a Raspberry Pi 5 + Hailo-8L edge-vision device with its own fleet backend, a CI/CD security review pipeline, the Kynetic Clip backend and a document Q&amp;A system.">
+<meta property="og:title" content="Work · Nirdesh Adusumilli">
+<meta property="og:description" content="Perch/Flock edge-vision device and fleet backend, a CI/CD security review pipeline, the Kynetic Clip backend and a document Q&amp;A system.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%231c1d20'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Arial,sans-serif' font-size='17' fill='%23fff'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400..600&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script src="components.js" defer></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<site-nav><noscript><header class="nav"><a class="brand" href="index.html">&copy; Nirdesh Adusumilli</a><nav class="nav-links" aria-label="Primary" style="display:flex"><a href="portfolio.html" aria-current="page">Work</a><a href="resume.html">Resume</a></nav></header></noscript></site-nav>
+
+<main id="main">
+
+  <header class="page-head">
+    <p class="label">Work, 2025 to 2026</p>
+    <h1>Things I&rsquo;ve built, on my own time and on the job.</h1>
+  </header>
+
+  <article class="case" id="perch">
+    <div class="case-top">
+      <p class="label">01</p>
+      <h2>Perch / Flock</h2>
+      <p class="case-lead">An <span class="nb">edge-vision</span> device, and the fleet backend that keeps it updated.</p>
+    </div>
+    <dl class="case-meta" data-r>
+      <div><dt>Role</dt><dd>ML pipeline and fleet backend</dd></div>
+      <div><dt>When</dt><dd><time datetime="2026-10">Oct 2026</time> to present</dd></div>
+      <div><dt>Built with</dt><dd>Raspberry Pi 5, <span class="nb">Hailo-8L</span>, YOLO, Python, SQLite, Prometheus, Grafana, OTA updates, QAT</dd></div>
+    </dl>
+    <ol class="steps" data-r>
+      <li><p class="label">On the device</p><strong>Perch</strong><p>A Raspberry Pi 5 with a <span class="nb">Hailo-8L</span>. I&rsquo;m building its ML pipeline: a YOLO nano detector compiled to Hailo HEF, a Python inference runtime, and a SQLite queue so detections survive network drops.</p></li>
+      <li><p class="label">Across the fleet</p><strong>Flock</strong><p>The backend I&rsquo;m building alongside it: a device registry, heartbeat telemetry, and signed <span class="nb">over-the-air</span> model updates with canary rollout and automatic rollback.</p></li>
+      <li><p class="label">On the dashboard</p><strong>Prometheus and Grafana</strong><p>Dashboards for the fleet, fed by the telemetry Flock collects.</p></li>
+      <li><p class="label">And back again</p><strong>Retraining loop</strong><p>A closed loop I&rsquo;m designing: <span class="nb">on-device</span> <span class="nb">hard-example</span> mining, <span class="nb">fine-tuning</span> with <span class="nb">quantization-aware</span> training, <span class="nb">held-out</span> evaluation, then <span class="nb">fleet-wide</span> deployment.</p></li>
+    </ol>
+    <p class="case-foot">Still in progress. The repository isn&rsquo;t public.</p>
+  </article>
+
+  <article class="case" id="review">
+    <div class="case-top">
+      <p class="label">02</p>
+      <h2>Security Review</h2>
+      <p class="case-lead">An <span class="nb">AI-powered</span> security review that runs in CI on every pull request.</p>
+    </div>
+    <dl class="case-meta" data-r>
+      <div><dt>Where</dt><dd><span class="nb">Rose-Hulman</span> Ventures, internship</dd></div>
+      <div><dt>When</dt><dd><time datetime="2026-06">Jun 2026</time> to present</dd></div>
+      <div><dt>Built with</dt><dd>GitHub Actions, Anthropic Claude API</dd></div>
+    </dl>
+    <div class="case-text" data-r>
+      <p>I built a CI/CD security review pipeline using GitHub Actions and the Anthropic Claude API. It scans every pull request for vulnerabilities before merge, and it has since been adopted across multiple projects.</p>
+    </div>
+  </article>
+
+  <article class="case" id="kynetic">
+    <div class="case-top">
+      <p class="label">03</p>
+      <h2>Kynetic Clip</h2>
+      <p class="case-lead">The backend for <span class="nb">per-rep</span> performance metrics.</p>
+    </div>
+    <dl class="case-meta" data-r>
+      <div><dt>Role</dt><dd><span class="nb">Co-Founder</span> and Lead Software Developer</dd></div>
+      <div><dt>When</dt><dd><time datetime="2025-10">Oct 2025</time> to <time datetime="2026-04">Apr 2026</time></dd></div>
+      <div><dt>Built with</dt><dd>Full-Stack Development, Laravel, AI Integration, Bootstrap, iOS Development, Mobile Development, Artificial Intelligence</dd></div>
+    </dl>
+    <div class="case-text" data-r>
+      <p>I built backend functionality for <span class="nb">per-rep</span> performance metrics with <span class="nb">auto-baseline</span> calibration to detect fatigue and performance degradation in real time, with <span class="nb">AI-driven</span> analytics for <span class="nb">week-over-week</span> analysis.</p>
+      <p>The product is under NDA, so there are no screens to show here.</p>
+    </div>
+  </article>
+
+  <article class="case" id="docqa">
+    <div class="case-top">
+      <p class="label">04</p>
+      <h2>Document Q&amp;A</h2>
+      <p class="case-lead">A PDF processing system that answers questions about the documents it reads.</p>
+    </div>
+    <dl class="case-meta" data-r>
+      <div><dt>Where</dt><dd>SoftForce Apps, internship</dd></div>
+      <div><dt>When</dt><dd><time datetime="2025-06">Jun 2025</time> to <time datetime="2025-08">Aug 2025</time></dd></div>
+      <div><dt>Built with</dt><dd>FastAPI, Python, OpenAI</dd></div>
+    </dl>
+    <div class="case-text" data-r>
+      <p>I developed a <span class="nb">FastAPI-based</span> PDF processing system with OpenAI integration for document Q&amp;A, enabling intelligent text extraction and contextual responses.</p>
+    </div>
+  </article>
+
+  <a class="next" href="resume.html">
+    <span><span class="label">Next</span><span class="next-t">Resume</span></span>
+    <span class="orb" data-mag aria-hidden="true"><span>Read it</span></span>
+  </a>
+
+</main>
+
+<site-footer><noscript><footer class="foot" id="contact"><div class="foot-in"><h2 class="foot-h">Let&rsquo;s work<br>together</h2><div class="foot-pills"><a class="pill" href="mailto:adusumillinirdesh@gmail.com">adusumillinirdesh@gmail.com</a><a class="pill" href="https://www.linkedin.com/in/nirdeshadusumilli/" rel="noopener">LinkedIn</a><a class="pill" href="https://github.com/nirdeshadusumilli2007" rel="noopener">GitHub</a></div></div><div class="foot-bar"><div><h3>Based in</h3><p>Terre Haute, IN</p></div></div></footer></noscript></site-footer>
+</body>
 </html>
